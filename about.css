@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('bgabout.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+header {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to bottom, #000000ad, #ffffff00);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+#highlight {
+color: yellow;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    border-radius: 15px;
+}
+
+nav ul li {
+    margin-left: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.text-content {
+    max-width: 40%;
+    opacity: 0; 
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; 
+    }
+}
+.text-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.videos {
+    display: flex;
+    gap: 20px;
+}
+
+.videos video {
+    width: 400px;
+    height: 225px;
+    object-fit: cover;
+}
+
+footer {
+    background: linear-gradient(to top, #000000ad, #ffffff00);
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .text-content h1 {
+        font-size: 28px;
+    }
+
+    .text-content p {
+        font-size: 14px;
+    }
+
+    .videos video {
+        max-width: 100%;
+    }
+}

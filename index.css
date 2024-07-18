@@ -1,0 +1,81 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'roboto' ;
+    background: url(bgindex.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: linear-gradient(to bottom, #000000ad, #ffffff00);
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+#highlight {
+    color: yellow;
+    }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    border-radius: 8px;
+}
+
+nav ul li {
+    margin-left: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: calc(100vh - 60px); 
+    padding-left: 20px;
+}
+
+.content {
+    padding: 20px;
+    border-radius: 8px;
+    opacity: 0; 
+    animation: fadeIn 2s forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1; 
+    }
+}
+
+.content h1 {
+    margin-bottom: 10px;
+    font-size: 34px;
+    color: white;
+}
+
+.content p {
+    font-size: 20px;
+    color: white;
+}
